@@ -12,14 +12,14 @@ flutter_rxbus ^0.0.1
 #### 用法1、注册/解除注册 (usage 1、register/unregister)
 
 ```dart
-///注册
+    ///注册
     RxBus.getInstance().register<T>((value) {
         });
 
     @override
     void dispose() {
         ///解除注册 unregister
-        RxBus.getInstance().unregister<int>();
+        RxBus.getInstance().unregister<T>();
         super.dispose();
     }
 ```
